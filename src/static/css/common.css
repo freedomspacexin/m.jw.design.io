@@ -1,0 +1,144 @@
+.mui-bar {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    height: 44px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom: 0;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .85);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .85);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.mui-bar-tab {
+    bottom: 0;
+    display: table;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    table-layout: fixed;
+    border-top: 0;
+    border-bottom: 0;
+    -webkit-touch-callout: none;
+}
+
+.mui-bar-tab .mui-tab-item {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #929292;
+}
+
+.mui-bar-tab .mui-tab-item.mui-active {
+    color: #007aff;
+}
+
+.mui-bar-tab .mui-tab-item .icomoon_font {
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.mui-bar-tab .mui-tab-item .icomoon_font~.mui-tab-label {
+    font-size: 11px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mui-bar-tab .mui-tab-item .icomoon_font:active {
+    background: none;
+}
+
+
+.mui-bar .mui-icon {
+    font-size: 24px;
+    position: relative;
+    z-index: 20;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mui-bar .icomoon_font:active {
+    opacity: .3;
+}
+
+.mui-bar .mui-btn .icomoon_font {
+    top: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.mui-bar .mui-title .icomoon_font {
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {  /*声明字体  引用字体*/
+  font-family: "icomoon";  /*我们自己起名字可以*/
+  font-style: normal;  /*倾斜字体正常*/
+  /*固定写法，路径为自已的字体路径*/
+  src:  url('../fonts/icomoon.eot?7kkyc2');
+  src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+  url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+  url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+}
+
+.icomoon_font {
+  font-family:icomoon;
+}
+.icomoon_font_home::before {
+  content: "\e88a";
+}
+
+.icomoon_font_category::before {
+  content: "\e1bd";
+}
+
+.icomoon_font_active::before{
+  content: "\e8cb";
+}
+
+.icomoon_font_cart::before{
+  content: "\e8cc";
+}
+
+.icomoon_font_personal::before{
+  content: "\e7fd";
+
+}
+
+.mint-swipe .mint-swipe-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 75%;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+}
+.mint-swipe-indicator {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: 0.3;
+    margin: 0 3px;
+}
+.mint-swipe-indicator.is-active {
+    background: #ffc428;
+    opacity: 0.9;
+}

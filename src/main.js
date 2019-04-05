@@ -15,7 +15,7 @@ Vue.use(Mint);
 //http组件：axios组件
 import Axios from 'axios';
 Vue.prototype.$ajax = Axios;
-Axios.defaults.baseURL = '/server/api/';
+Axios.defaults.baseURL = './server/api/';
 
 //第三方组件---------- end-------------
 //默认样式重置
